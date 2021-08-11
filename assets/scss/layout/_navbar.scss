@@ -1,0 +1,48 @@
+.menu {
+    padding: 25px 20px;
+    border-bottom: 1px solid gray;
+    display: flex;
+    justify-content: space-between;
+    &__logo {
+        font-size: 24px;
+        font-weight: bold;
+        text-transform: uppercase;
+        padding-left: 50px;
+    }
+    &__nav {
+        width: 840px;
+        text-align: right;
+    }
+    &__lista {
+        justify-content: space-between;
+        text-decoration: none;
+        text-transform: uppercase;
+        padding-right: 100px;
+    }
+    &__item {
+        display: inline;
+        text-decoration: none;
+        text-transform: uppercase;
+        list-style: none;
+    }
+    &__itemNone {
+        display: none;
+        color: violet;
+    }
+    &__link {
+        text-decoration: none;
+        text-transform: uppercase;
+    }
+    &__input {
+        border-radius: 30px;
+    }
+}
+
+
+/* Desktop Size */
+
+@include respond-to ($bp-lg) {
+    .menu__itemNone {
+        display: inline;
+    }
+}

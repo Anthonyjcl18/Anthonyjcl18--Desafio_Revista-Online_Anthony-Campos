@@ -1,0 +1,51 @@
+.aside {
+    float: right;
+    display: none;
+    &__listado {
+        width: 310px;
+        border-bottom: 1px solid gray;
+    }
+    &__titulo {
+        padding: 10px 0;
+    }
+    &__parrafo {
+        padding-bottom: 10px;
+    }
+    &__tags {
+        border-bottom: 1px solid gray;
+    }
+    &__lista {
+        padding: 0;
+        list-style: none;
+    }
+    &__lista:nth-child(1) {
+        margin-left: 30px;
+    }
+    &__item {
+        display: inline-block;
+        margin: 15px;
+        padding: 2px 4px;
+        background-color: steelblue;
+        margin-right: 1px;
+        color: white;
+    }
+    &__destacadas {
+        margin-bottom: 50px;
+    }
+    &__subtitulo {
+        padding: 10px 0;
+    }
+    &__imagen {
+        width: 240px;
+        height: 200px;
+    }
+}
+
+/* Desktop Size */
+
+@include respond-to ($bp-lg) {
+    .aside {
+        display: inline;
+        float: right;
+    }
+}

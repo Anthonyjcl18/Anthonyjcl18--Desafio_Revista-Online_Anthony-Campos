@@ -1,17 +1,17 @@
-/* //abstracts
+//abstracts
 @import "abstracts/mixins";
 @import "abstracts/variables";
 //vendors
-@import "vendors/bootstrap4.6/bootstrap";
 //base
 @import "base/reset";
-@import "base/typography";
 //layout
+@import "layout/footer";
+@import "layout/grid";
+@import "layout/main";
 @import "layout/navbar";
-@import "layout/header";
-@import "layout/mainp";
+@import "layout/newsAside";
+@import "layout/newsletterAside";
 //components
-@import "components/buttons"; */
+@import "components/buttons";
 //pages
-@import "pages/index";
 //themes
